@@ -1,0 +1,17 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    float num;
+    scanf("%f", &num);
+    printf("%.6f\n", num);
+    printf("%.4f\n", num);
+    printf("%.2f\n", num);
+    printf("%d\n", (int)round(num));
+    return 0;
+}
