@@ -1,0 +1,27 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int length, breadth, rope_length, carpet_quantity;
+
+    // Read the length and breadth of the ground
+    scanf("%d", &length);
+    scanf("%d", &breadth);
+
+    // Calculate the length of the rope (perimeter)
+    rope_length = 2 * (length + breadth);
+
+    // Calculate the quantity of carpet required (area)
+    carpet_quantity = length * breadth;
+
+    // Print the results
+    printf("%d\n", rope_length);
+    printf("%d\n", carpet_quantity);
+    return 0;
+}
