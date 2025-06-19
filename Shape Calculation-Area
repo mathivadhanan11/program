@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int a, l, b, r, base, height;
+    float pi = 3.14159;
+    float square_area, rectangle_area, circle_area, triangle_area;
+
+    scanf("%d", &a);
+    scanf("%d", &l);
+    scanf("%d", &b);
+    scanf("%d", &r);
+    scanf("%d", &base);
+    scanf("%d", &height);
+
+    square_area = (float)a * a;
+    rectangle_area = (float)l * b;
+    circle_area = pi * r * r;
+    triangle_area = 0.5 * base * height;
+    circle_area=(float)((int)(circle_area*100))/100.0;
+    printf("Area of Square=%.0f\n", square_area);
+    printf("Area of Rectangle=%.0f\n", rectangle_area);
+    printf("Area of Circle=%.2f\n", circle_area);
+    printf("Area of Triangle=%.0f\n", triangle_area);
+    return 0;
+}
